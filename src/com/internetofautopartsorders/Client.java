@@ -13,7 +13,7 @@ public class Client {
     private final User user;
     private Discount currentDiscount;
 
-    public Client(int id, String name, String surname, User user, Discount currentDiscount) {
+    public Client(String name, String surname, User user, Discount currentDiscount) {
         this.id = ++newId;
         this.name = name;
         this.surname = surname;
