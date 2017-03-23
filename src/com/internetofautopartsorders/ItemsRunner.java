@@ -22,10 +22,6 @@ public class ItemsRunner {
         items.addItem(new Item(12, 250.99, ItemType.TRANSMISSION, new ItemProducer("AUTOPART", "0973755912")));
         items.addItem(new Item(13, 359.50, ItemType.TRANSMISSION, new ItemProducer("EUROSTANDART", "0632594185")));
         items.addItem(new Item(14, 89.99, ItemType.ENGINE, new ItemProducer("AUTOPART", "0973755912")));
-//
-//        System.out.println(items.getByItemType(ItemType.CHASSIS));
-//        System.out.println(items.getByPrice(100.00, 500.00));
-//        System.out.println(items.getByItemProducerName("AUTOPART"));
 
         items.sortBy(new ItemPriceComparator());
 
