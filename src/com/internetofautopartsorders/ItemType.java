@@ -1,9 +1,7 @@
-package internetofautopartsorders;
-
 public enum ItemType {
     CARBODY,
     CHASSIS,
-    TRANSMISSION,
+    ELECTRICS,
     ENGINE,
-    ELECTRICS
+    TRANSMISSION
 }

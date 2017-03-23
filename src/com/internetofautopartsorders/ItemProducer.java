@@ -1,11 +1,26 @@
-package internetofautopartsorders;
-
 public class ItemProducer {
-    private final String name;
-    private final String contacts;
 
-    public ItemProducer(String name, String contacts) {
+    private final String name;
+    private final String phone;
+
+    public ItemProducer(String name, String phone) {
         this.name = name;
-        this.contacts = contacts;
+        this.phone = phone;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    @Override
+    public String toString() {
+        return "ItemProducer{" +
+                "name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }
