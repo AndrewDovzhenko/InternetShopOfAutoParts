@@ -13,4 +13,19 @@ public class User {
         this.password = password;
         this.typeOfUser = typeOfUser;
     }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public UserType getTypeOfUser() {
+        return typeOfUser;
+    }
+
+
+
 }
