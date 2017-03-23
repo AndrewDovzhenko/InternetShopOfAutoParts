@@ -2,11 +2,11 @@ public class Item{
     private static int newId;
 
     private final int id;
-    private final double price;
+    private final long price;
     private final ItemType itemtype;
     private final ItemProducer itemProducer;
 
-    public Item(int id, double price, ItemType itemtype, ItemProducer itemProducer) {
+    public Item(int id, long price, ItemType itemtype, ItemProducer itemProducer) {
         this.id = ++newId;
         this.price = price;
         this.itemtype = itemtype;
@@ -17,7 +17,7 @@ public class Item{
         return id;
     }
 
-    public double getPrice() {
+    public long getPrice() {
         return price;
     }
 

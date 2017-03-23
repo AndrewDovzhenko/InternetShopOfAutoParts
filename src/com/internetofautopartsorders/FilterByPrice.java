@@ -4,10 +4,10 @@ import java.util.List;
 public class FilterByPrice implements Filter {
 
 
-    private final double from;
-    private final double to;
+    private final long from;
+    private final long to;
 
-    public FilterByPrice(double from, double to) {
+    public FilterByPrice(long from, long to) {
         this.from = from;
         this.to = to;
     }
