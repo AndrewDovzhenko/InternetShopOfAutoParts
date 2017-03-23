@@ -12,8 +12,8 @@ public class BasketOrderPosition {
         this.quantity = quantity;
     }
 
-    public void addPosition(){
-        quantity += 1;
+    public void addPosition(int quantity){
+        this.quantity += quantity;
     }
 
     public Item getItem() {
@@ -22,5 +22,10 @@ public class BasketOrderPosition {
 
     public int getQuantity() {
         return quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "Position{ item=" + item +", quantity=" + quantity +'}';
     }
 }

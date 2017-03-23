@@ -10,15 +10,26 @@ public class Order {
     public static int newId;
 
     private final int id;
-    private final List<BasketOrderPosition> items = new ArrayList<>();
+    private final List<BasketOrderPosition> positions;
+    private final Client client;
     private final long orderSum;
+    private final Discount discount;
 
     public Order(Basket basket){
         id = ++newId;
-        orderSum = 0;
+        orderSum = basket.getBasketSum();
+        positions = basket.getPositions();
+        discount = basket.getDiscount();
+        client = basket.getClient();
     }
 
     public int getId() {
         return id;
     }
+
+    public Client getClient() {
+        return client;
+    }
+
+
 }
