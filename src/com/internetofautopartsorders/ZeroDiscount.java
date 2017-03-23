@@ -5,7 +5,7 @@ package com.internetofautopartsorders;
  */
 public class ZeroDiscount implements Discount {
     @Override
-    public double calculatePrice() {
-        return 0;
+    public long calculatePrice(BasketOrderPosition position) {
+        return position.getItem().getPrice();
     }
 }

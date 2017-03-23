@@ -11,7 +11,7 @@ public class Order {
 
     private final int id;
     private final List<Item> items = new ArrayList<Item>();
-    private final double orderSum;
+    private final long orderSum;
 
     public Order(Basket basket){
         id = ++newId;

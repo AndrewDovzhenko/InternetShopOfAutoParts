@@ -1,13 +1,13 @@
-public class ItemProducer {
+package internetofautopartsorders;
 
+public class ItemProducer {
     private final String name;
     private final String phone;
 
-    public ItemProducer(String name, String phone) {
+    public ItemProducer(String name, String contacts) {
         this.name = name;
-        this.phone = phone;
+        this.contacts = contacts;
     }
-
     public String getName() {
         return name;
     }
@@ -24,3 +24,4 @@ public class ItemProducer {
                 '}';
     }
 }
+
