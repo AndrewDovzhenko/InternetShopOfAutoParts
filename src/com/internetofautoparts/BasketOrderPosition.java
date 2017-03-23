@@ -1,4 +1,4 @@
-package com.internetofautopartsorders;
+package com.internetofautoparts;
 
 /**
  * Created by Andrew on 22.03.2017.

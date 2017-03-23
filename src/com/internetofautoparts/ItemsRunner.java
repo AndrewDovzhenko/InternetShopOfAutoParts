@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+package com.internetofautoparts;
 
 public class ItemsRunner {
 
@@ -23,7 +21,7 @@ public class ItemsRunner {
         items.addItem(new Item(13, 359, ItemType.TRANSMISSION, new ItemProducer("EUROSTANDART", "0632594185")));
         items.addItem(new Item(14, 89, ItemType.ENGINE, new ItemProducer("AUTOPART", "0973755912")));
 
-        items.sortBy(new ItemPriceComparator());
+        items.sortBy(new ItemTypeComparator());
 
         for (Item elem : items.getByFilter(new FilterByProducerName("MEGADRIVER"))) {
             System.out.println(elem);

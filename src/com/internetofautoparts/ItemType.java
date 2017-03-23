@@ -1,4 +1,4 @@
-package internetofautopartsorders;
+package com.internetofautoparts;
 
 public enum ItemType {
     CARBODY,

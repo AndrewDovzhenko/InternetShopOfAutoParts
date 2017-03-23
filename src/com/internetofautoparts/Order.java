@@ -1,4 +1,4 @@
-package com.internetofautopartsorders;
+package com.internetofautoparts;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ public class Order {
     public static int newId;
 
     private final int id;
-    private final List<Item> items = new ArrayList<Item>();
+    private final List<BasketOrderPosition> items = new ArrayList<>();
     private final long orderSum;
 
     public Order(Basket basket){
@@ -18,4 +18,7 @@ public class Order {
         orderSum = 0;
     }
 
+    public int getId() {
+        return id;
+    }
 }
