@@ -1,10 +1,10 @@
-package com.internetofautoparts;
+import java.util.ArrayList;
 
 public class ItemsRunner {
 
     public static void main(String[] args) {
 
-        Items items = new Items();
+        Items items = new Items(new ArrayList());
 
         items.addItem(new Item(1, 75, ItemType.ENGINE, new ItemProducer("AUTOPART", "0973755912")));
         items.addItem(new Item(2, 25, ItemType.ENGINE, new ItemProducer("EUROSTANDART", "0632594185")));
@@ -21,11 +21,15 @@ public class ItemsRunner {
         items.addItem(new Item(13, 359, ItemType.TRANSMISSION, new ItemProducer("EUROSTANDART", "0632594185")));
         items.addItem(new Item(14, 89, ItemType.ENGINE, new ItemProducer("AUTOPART", "0973755912")));
 
-        items.sortBy(new ItemTypeComparator());
-
-        for (Item elem : items.getByFilter(new FilterByProducerName("MEGADRIVER"))) {
+        items.sortBy(new ItemTypePriceComparator());
+        for (Item elem: items.getItemList()) {
             System.out.println(elem);
+            
         }
+
+//        for (Item elem : items.filter(new FilterByProducerName("MEGADRIVER"))) {
+//            System.out.println(elem);
+//        }
 
     }
 
