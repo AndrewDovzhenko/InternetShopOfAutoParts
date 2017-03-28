@@ -1,6 +1,7 @@
 package com.internetofautoparts.userdata;
 
 import com.internetofautoparts.discounts.Discount;
+import com.internetofautoparts.discounts.ZeroDiscount;
 
 /**
  * Created by Andrew on 13.03.2017.
@@ -21,6 +22,14 @@ public class Client {
         this.surname = surname;
         this.user = user;
         this.currentDiscount = currentDiscount;
+    }
+
+    public Client(String name, String surname, User user) {
+        this.id = ++newId;
+        this.name = name;
+        this.surname = surname;
+        this.user = user;
+        this.currentDiscount = new ZeroDiscount();
     }
 
     public int getId() {

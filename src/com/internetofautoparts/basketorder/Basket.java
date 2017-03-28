@@ -1,16 +1,18 @@
 package com.internetofautoparts.basketorder;
 
+import com.internetofautoparts.discounts.ZeroDiscount;
 import com.internetofautoparts.userdata.Client;
 import com.internetofautoparts.discounts.Discount;
 import com.internetofautoparts.itemlibrary.Item;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
  * Created by Andrew on 14.03.2017.
  */
-public class Basket {
+public class Basket implements Iterable<BasketOrderPosition> {
 
     private final List<BasketOrderPosition> positions;
     private final Client client;
@@ -20,13 +22,20 @@ public class Basket {
     public Basket(Client client) {
         this.client = client;
         positions = new ArrayList<>();
+        discount = new ZeroDiscount();
+    }
+
+    public Basket(Client client, Discount discount) {
+        this.client = client;
+        positions = new ArrayList<>();
+        this.discount = discount;
 
     }
 
     public long getBasketSum(){
        long result = 0;
         for (BasketOrderPosition position : positions) {
-            result += discount.calculatePrice(position);
+            result += discount.calculateBasketPositionSum(position);
         }
         return result;
     }
@@ -62,6 +71,11 @@ public class Basket {
 
     public Order toOrder(){
         return new Order(this);
+    }
+
+    @Override
+    public Iterator<BasketOrderPosition> iterator() {
+        return positions.iterator();
     }
 
     @Override

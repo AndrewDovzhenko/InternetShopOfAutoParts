@@ -14,6 +14,9 @@ public class Order {
     private final int id;
     private final List<BasketOrderPosition> positions;
     private final Client client;
+
+
+
     private final long orderSum;
     private final Discount discount;
 
@@ -33,5 +36,8 @@ public class Order {
         return client;
     }
 
+    public long getOrderSum() {
+        return orderSum;
+    }
 
 }
