@@ -1,4 +1,6 @@
-package com.internetofautoparts;
+package com.internetofautoparts.basketorder;
+
+import com.internetofautoparts.Item;
 
 /**
  * Created by Andrew on 22.03.2017.

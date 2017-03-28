@@ -1,4 +1,9 @@
-package com.internetofautoparts;
+package com.internetofautoparts.userdata;
+
+import com.internetofautoparts.discounts.Discount;
+import com.internetofautoparts.discounts.ZeroDiscount;
+import com.internetofautoparts.basketorder.Basket;
+import com.internetofautoparts.basketorder.Order;
 
 /**
  * Created by Andrew on 13.03.2017.

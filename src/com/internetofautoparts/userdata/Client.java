@@ -1,4 +1,6 @@
-package com.internetofautoparts;
+package com.internetofautoparts.userdata;
+
+import com.internetofautoparts.discounts.Discount;
 
 /**
  * Created by Andrew on 13.03.2017.

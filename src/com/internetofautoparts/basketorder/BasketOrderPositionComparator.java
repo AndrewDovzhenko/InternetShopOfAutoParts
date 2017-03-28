@@ -1,4 +1,6 @@
-package com.internetofautoparts;
+package com.internetofautoparts.basketorder;
+
+import com.internetofautoparts.ItemIdComparator;
 
 import java.util.Comparator;
 
