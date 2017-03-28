@@ -1,4 +1,4 @@
-package com.internetofautoparts;
+package com.internetofautoparts.itemlibrary;
 
 public class Item{
     private static int newId;

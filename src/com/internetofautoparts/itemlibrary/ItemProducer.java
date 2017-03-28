@@ -1,4 +1,4 @@
-package com.internetofautoparts;
+package com.internetofautoparts.itemlibrary;
 
 public class ItemProducer {
     private final String name;

@@ -1,4 +1,6 @@
-package com.internetofautoparts;
+package com.internetofautoparts.itemlibrary;
+
+import com.internetofautoparts.itemlibrary.Item;
 
 import java.util.Comparator;
 

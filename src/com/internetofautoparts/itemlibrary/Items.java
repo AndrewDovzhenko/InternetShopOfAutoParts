@@ -1,3 +1,7 @@
+package com.internetofautoparts.itemlibrary;
+
+import com.internetofautoparts.filters.Filter;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

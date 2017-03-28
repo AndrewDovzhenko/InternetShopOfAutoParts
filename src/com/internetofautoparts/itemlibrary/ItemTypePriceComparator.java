@@ -1,3 +1,5 @@
+package com.internetofautoparts.itemlibrary;
+
 import java.util.Comparator;
 
 public class ItemTypePriceComparator implements Comparator<Item> {

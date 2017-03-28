@@ -1,6 +1,8 @@
-package com.internetofautoparts;
+package com.internetofautoparts.filters;
 
-public class FilterByProducerName  implements Filter{
+import com.internetofautoparts.itemlibrary.Item;
+
+public class FilterByProducerName  implements Filter<Item>{
 
     private final String itemProducerName;
 

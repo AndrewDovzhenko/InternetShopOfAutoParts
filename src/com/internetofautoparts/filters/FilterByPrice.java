@@ -1,6 +1,8 @@
-package com.internetofautoparts;
+package com.internetofautoparts.filters;
 
-public class FilterByPrice implements Filter {
+import com.internetofautoparts.itemlibrary.Item;
+
+public class FilterByPrice implements Filter<Item> {
 
 
     private final long from;

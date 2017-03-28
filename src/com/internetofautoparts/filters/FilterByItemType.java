@@ -1,6 +1,9 @@
-package com.internetofautoparts;
+package com.internetofautoparts.filters;
 
-public class FilterByItemType implements Filter {
+import com.internetofautoparts.itemlibrary.Item;
+import com.internetofautoparts.itemlibrary.ItemType;
+
+public class FilterByItemType implements Filter<Item> {
 
     private ItemType itemType;
 

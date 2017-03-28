@@ -2,7 +2,7 @@ package com.internetofautoparts.basketorder;
 
 import com.internetofautoparts.userdata.Client;
 import com.internetofautoparts.discounts.Discount;
-import com.internetofautoparts.Item;
+import com.internetofautoparts.itemlibrary.Item;
 
 import java.util.ArrayList;
 import java.util.List;
