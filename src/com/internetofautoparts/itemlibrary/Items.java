@@ -2,12 +2,10 @@ package com.internetofautoparts.itemlibrary;
 
 import com.internetofautoparts.filters.Filter;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
-public class Items {
+public class Items implements Iterable<Item>{
+    private final List<Item> itemList = new ArrayList<>();
 
     public Items(List<Item> arrayList) {
         for (Item elem : arrayList) {
@@ -17,8 +15,6 @@ public class Items {
 
     public Items() {
     }
-
-    private final List<Item> itemList = new ArrayList<>();
 
     public List<Item> getItemList() {
         return itemList;
@@ -58,4 +54,8 @@ public class Items {
                 '}';
     }
 
+    @Override
+    public Iterator<Item> iterator() {
+        return itemList.iterator();
+    }
 }
