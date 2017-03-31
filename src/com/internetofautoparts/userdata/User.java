@@ -1,9 +1,11 @@
 package com.internetofautoparts.userdata;
 
+import java.io.Serializable;
+
 /**
  * Created by Andrew on 13.03.2017.
  */
-public class User {
+public class User implements Serializable {
     private final String login;
     private final String password;
     private final UserType typeOfUser;

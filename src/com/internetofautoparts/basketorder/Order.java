@@ -3,19 +3,19 @@ package com.internetofautoparts.basketorder;
 import com.internetofautoparts.userdata.Client;
 import com.internetofautoparts.discounts.Discount;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by Andrew on 14.03.2017.
  */
-public class Order {
+public class Order implements Serializable {
+
     public static int newId;
 
     private final int id;
     private final List<BasketOrderPosition> positions;
     private final Client client;
-
-
 
     private final long orderSum;
     private final Discount discount;

@@ -1,6 +1,8 @@
 package com.internetofautoparts.itemlibrary;
 
-public class Item{
+import java.io.Serializable;
+
+public class Item implements Serializable{
     private static int newId;
 
     private final int id;

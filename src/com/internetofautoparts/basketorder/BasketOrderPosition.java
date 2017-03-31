@@ -2,10 +2,12 @@ package com.internetofautoparts.basketorder;
 
 import com.internetofautoparts.itemlibrary.Item;
 
+import java.io.Serializable;
+
 /**
  * Created by Andrew on 22.03.2017.
  */
-public class BasketOrderPosition {
+public class BasketOrderPosition implements Serializable{
     private final Item item;
     private int quantity;
 

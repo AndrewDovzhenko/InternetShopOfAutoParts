@@ -1,6 +1,8 @@
 package com.internetofautoparts.itemlibrary;
 
-public enum ItemType {
+import java.io.Serializable;
+
+public enum ItemType implements Serializable {
     CARBODY,
     CHASSIS,
     TRANSMISSION,

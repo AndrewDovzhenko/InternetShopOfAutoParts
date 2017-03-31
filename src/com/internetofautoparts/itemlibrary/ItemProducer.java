@@ -1,6 +1,8 @@
 package com.internetofautoparts.itemlibrary;
 
-public class ItemProducer {
+import java.io.Serializable;
+
+public class ItemProducer implements Serializable {
     private final String name;
     private final String phone;
 

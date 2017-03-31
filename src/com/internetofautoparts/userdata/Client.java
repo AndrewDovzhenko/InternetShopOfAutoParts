@@ -3,10 +3,12 @@ package com.internetofautoparts.userdata;
 import com.internetofautoparts.discounts.Discount;
 import com.internetofautoparts.discounts.ZeroDiscount;
 
+import java.io.Serializable;
+
 /**
  * Created by Andrew on 13.03.2017.
  */
-public class Client {
+public class Client implements Serializable {
 
     private static int newId;
 
