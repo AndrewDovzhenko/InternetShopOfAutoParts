@@ -1,4 +1,4 @@
-package com.internetofautoparts.io.Procedural;
+package com.internetofautoparts.binaryio;
 
 import com.internetofautoparts.io.IllegalFormatException;
 import com.internetofautoparts.itemlibrary.Item;
@@ -8,6 +8,7 @@ import com.internetofautoparts.itemlibrary.Items;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.IllegalFormatException;
 import java.util.List;
 
 
